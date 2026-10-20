@@ -70,15 +70,13 @@ After extraction, confirm the folder contains:
 Do not run the tool from inside the zip preview. Extract the zip first.
 
 
-Step 2 - Login to X using the sockpuppet account
+Step 2 - Setup X List
 ------------------------------------------------
-In the XTIM package, open the text file named:
-
-X Account Details
-
-Use the given email ID and password to log in to X at:
+Use an email ID and password to log in to X at:
 
 https://x.com/
+
+On X, go to the Lists tab and add as many threat intel pages, dark web monitoring and news pages, underground cybersecurity intel pages and things as you would wish to collect intel from to a list named "TIM"
 
 
 Step 3 - Open Command Prompt in the XTIM folder
