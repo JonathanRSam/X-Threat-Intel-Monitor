@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>X Threat Intel Capture</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>X Threat Intel Capture</h1>
+    <div class="subtitle">Manual-scroll capture buffer for X Lists / Following feed</div>
+
+    <div class="status-card">
+      <div><strong>Status:</strong> <span id="status">Idle</span></div>
+      <div><strong>Detected visible posts:</strong> <span id="detectedCount">0</span></div>
+      <div><strong>Stored unique posts:</strong> <span id="storedCount">0</span></div>
+      <div><strong>Current run new posts:</strong> <span id="runNewCount">0</span></div>
+      <div><strong>Already-stored posts seen:</strong> <span id="runDuplicateCount">0</span></div>
+      <div><strong>Newest published:</strong> <span id="newestPublished">-</span></div>
+      <div><strong>Oldest published:</strong> <span id="oldestPublished">-</span></div>
+      <div><strong>Last scan:</strong> <span id="lastScan">Never</span></div>
+      <div><strong>Current page:</strong> <span id="pageStatus">Unknown</span></div>
+    </div>
+
+    <div class="buttons">
+      <button id="startBtn">Start Capture</button>
+      <button id="stopBtn">Stop Capture</button>
+      <button id="scanBtn">Scan Visible Posts Now</button>
+      <button id="exportBtn">Export Capture JSON</button>
+      <button id="resetRunBtn" class="secondary">Reset Run Counters</button>
+      <button id="purgeOldBtn" class="secondary">Purge Posts Older Than 3 Days</button>
+      <button id="clearBtn" class="danger">Clear Capture Buffer</button>
+    </div>
+
+    <div class="note">
+      <p><strong>How to use:</strong> Clear buffer at the start of a new day, click Start Capture, scroll X lists, export JSON whenever needed, then run the Python processor.</p>
+      <p><strong>Important:</strong> Export includes everything currently stored in this extension buffer. Python will handle final dedupe before writing Excel.</p>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

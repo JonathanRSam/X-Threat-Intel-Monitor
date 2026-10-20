@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "X Threat Intel Capture",
+  "version": "1.1.0",
+  "description": "Capture visible X/Twitter threat-intel posts while manually scrolling, then export JSON for local Python processing.",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "host_permissions": ["https://x.com/*", "https://twitter.com/*"],
+  "action": {
+    "default_title": "X Threat Intel Capture",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*", "https://twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
