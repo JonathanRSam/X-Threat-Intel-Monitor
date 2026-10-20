@@ -1,4 +1,5 @@
-XTIM DAILY THREAT INTELLIGENCE TOOL - SETUP AND DAILY RUN GUIDE
+XTIM DAILY X THREAT INTELLIGENCE TOOL 
+- SETUP AND DAILY RUN GUIDE -
 ================================================================
 
 Purpose
